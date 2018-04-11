@@ -726,10 +726,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="740"/>
         </scene>
-        <!--View Controller-->
+        <!--Pod Cast View Controller-->
         <scene sceneID="hyP-e7-ohw">
             <objects>
-                <viewController id="GT0-L0-q8Y" sceneMemberID="viewController">
+                <viewController id="GT0-L0-q8Y" customClass="PodCastViewController" customModule="Pod_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="GOe-Op-Rte">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="309"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -743,6 +743,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="addPodCastClicked:" target="GT0-L0-q8Y" id="ymJ-l5-KVH"/>
+                                </connections>
                             </button>
                             <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZq-MJ-jzg">
                                 <rect key="frame" x="5" y="31" width="170" height="22"/>
@@ -830,6 +833,9 @@
                             <constraint firstItem="T1A-NI-tpc" firstAttribute="top" secondItem="RZq-MJ-jzg" secondAttribute="bottom" constant="5" id="tGX-L8-ZtA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="podcastURLTextField" destination="RZq-MJ-jzg" id="dnX-z0-Muc"/>
+                    </connections>
                 </viewController>
                 <customObject id="LXC-3y-1qY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
